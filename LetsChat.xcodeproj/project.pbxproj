@@ -14,6 +14,10 @@
 		A5798C7827750A5000B7B494 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A5798C7727750A5000B7B494 /* FirebaseAuth */; };
 		A5798C7A27750A5000B7B494 /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A5798C7927750A5000B7B494 /* FirebaseDatabaseSwift-Beta */; };
 		A5798C7C27750A5000B7B494 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A5798C7B27750A5000B7B494 /* FirebaseFirestoreSwift-Beta */; };
+		A5798C8127750CDC00B7B494 /* TasksContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C7E27750CDC00B7B494 /* TasksContentView.swift */; };
+		A5798C8227750CDC00B7B494 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C7F27750CDC00B7B494 /* TaskDetailView.swift */; };
+		A5798C8327750CDC00B7B494 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C8027750CDC00B7B494 /* Task.swift */; };
+		A5798C872775161A00B7B494 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5798C862775161A00B7B494 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		8D188BF72559D13400D5669F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D188BFA2559D13400D5669F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D188BFC2559D13400D5669F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5798C7E27750CDC00B7B494 /* TasksContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksContentView.swift; sourceTree = "<group>"; };
+		A5798C7F27750CDC00B7B494 /* TaskDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
+		A5798C8027750CDC00B7B494 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		A5798C862775161A00B7B494 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../U_FungiFinder/U_FungiFinder/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,13 @@
 		8D188BF22559D13400D5669F /* LetsChat */ = {
 			isa = PBXGroup;
 			children = (
+				A5798C7D27750CDC00B7B494 /* TaskFBTest */,
 				8D188BF32559D13400D5669F /* LetsChatApp.swift */,
 				8D188BF52559D13400D5669F /* ContentView.swift */,
 				8D188BF72559D13400D5669F /* Assets.xcassets */,
-				8D188BFC2559D13400D5669F /* Info.plist */,
 				8D188BF92559D13400D5669F /* Preview Content */,
+				8D188BFC2559D13400D5669F /* Info.plist */,
+				A5798C862775161A00B7B494 /* GoogleService-Info.plist */,
 			);
 			path = LetsChat;
 			sourceTree = "<group>";
@@ -73,6 +83,16 @@
 				8D188BFA2559D13400D5669F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A5798C7D27750CDC00B7B494 /* TaskFBTest */ = {
+			isa = PBXGroup;
+			children = (
+				A5798C7E27750CDC00B7B494 /* TasksContentView.swift */,
+				A5798C7F27750CDC00B7B494 /* TaskDetailView.swift */,
+				A5798C8027750CDC00B7B494 /* Task.swift */,
+			);
+			path = TaskFBTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D188BFB2559D13400D5669F /* Preview Assets.xcassets in Resources */,
+				A5798C872775161A00B7B494 /* GoogleService-Info.plist in Resources */,
 				8D188BF82559D13400D5669F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,7 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5798C8227750CDC00B7B494 /* TaskDetailView.swift in Sources */,
 				8D188BF62559D13400D5669F /* ContentView.swift in Sources */,
+				A5798C8327750CDC00B7B494 /* Task.swift in Sources */,
+				A5798C8127750CDC00B7B494 /* TasksContentView.swift in Sources */,
 				8D188BF42559D13400D5669F /* LetsChatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
