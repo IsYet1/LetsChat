@@ -17,7 +17,7 @@
 		A5798C8127750CDC00B7B494 /* TasksContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C7E27750CDC00B7B494 /* TasksContentView.swift */; };
 		A5798C8227750CDC00B7B494 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C7F27750CDC00B7B494 /* TaskDetailView.swift */; };
 		A5798C8327750CDC00B7B494 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C8027750CDC00B7B494 /* Task.swift */; };
-		A5798C872775161A00B7B494 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5798C862775161A00B7B494 /* GoogleService-Info.plist */; };
+		A5798C8927751F3600B7B494 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5798C8827751F3600B7B494 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		A5798C7E27750CDC00B7B494 /* TasksContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksContentView.swift; sourceTree = "<group>"; };
 		A5798C7F27750CDC00B7B494 /* TaskDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
 		A5798C8027750CDC00B7B494 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		A5798C862775161A00B7B494 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../U_FungiFinder/U_FungiFinder/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A5798C8827751F3600B7B494 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 				8D188BF72559D13400D5669F /* Assets.xcassets */,
 				8D188BF92559D13400D5669F /* Preview Content */,
 				8D188BFC2559D13400D5669F /* Info.plist */,
-				A5798C862775161A00B7B494 /* GoogleService-Info.plist */,
+				A5798C8827751F3600B7B494 /* GoogleService-Info.plist */,
 			);
 			path = LetsChat;
 			sourceTree = "<group>";
@@ -161,8 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D188BFB2559D13400D5669F /* Preview Assets.xcassets in Resources */,
-				A5798C872775161A00B7B494 /* GoogleService-Info.plist in Resources */,
 				8D188BF82559D13400D5669F /* Assets.xcassets in Resources */,
+				A5798C8927751F3600B7B494 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
