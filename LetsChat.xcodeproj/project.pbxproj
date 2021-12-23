@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,9 @@
 		8D188BF62559D13400D5669F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D188BF52559D13400D5669F /* ContentView.swift */; };
 		8D188BF82559D13400D5669F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D188BF72559D13400D5669F /* Assets.xcassets */; };
 		8D188BFB2559D13400D5669F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D188BFA2559D13400D5669F /* Preview Assets.xcassets */; };
+		A5798C7827750A5000B7B494 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A5798C7727750A5000B7B494 /* FirebaseAuth */; };
+		A5798C7A27750A5000B7B494 /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A5798C7927750A5000B7B494 /* FirebaseDatabaseSwift-Beta */; };
+		A5798C7C27750A5000B7B494 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A5798C7B27750A5000B7B494 /* FirebaseFirestoreSwift-Beta */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5798C7C27750A5000B7B494 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				A5798C7A27750A5000B7B494 /* FirebaseDatabaseSwift-Beta in Frameworks */,
+				A5798C7827750A5000B7B494 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,11 @@
 			dependencies = (
 			);
 			name = LetsChat;
+			packageProductDependencies = (
+				A5798C7727750A5000B7B494 /* FirebaseAuth */,
+				A5798C7927750A5000B7B494 /* FirebaseDatabaseSwift-Beta */,
+				A5798C7B27750A5000B7B494 /* FirebaseFirestoreSwift-Beta */,
+			);
 			productName = LetsChat;
 			productReference = 8D188BF02559D13400D5669F /* LetsChat.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +123,9 @@
 				Base,
 			);
 			mainGroup = 8D188BE72559D13400D5669F;
+			packageReferences = (
+				A5798C7627750A5000B7B494 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 8D188BF12559D13400D5669F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +342,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A5798C7627750A5000B7B494 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A5798C7727750A5000B7B494 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5798C7627750A5000B7B494 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A5798C7927750A5000B7B494 /* FirebaseDatabaseSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5798C7627750A5000B7B494 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseDatabaseSwift-Beta";
+		};
+		A5798C7B27750A5000B7B494 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5798C7627750A5000B7B494 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8D188BE82559D13400D5669F /* Project object */;
 }
