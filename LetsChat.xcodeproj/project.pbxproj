@@ -18,6 +18,15 @@
 		A5798C8227750CDC00B7B494 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C7F27750CDC00B7B494 /* TaskDetailView.swift */; };
 		A5798C8327750CDC00B7B494 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C8027750CDC00B7B494 /* Task.swift */; };
 		A5798C8927751F3600B7B494 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5798C8827751F3600B7B494 /* GoogleService-Info.plist */; };
+		A5798C8F277522CA00B7B494 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C8B277522CA00B7B494 /* MessageListView.swift */; };
+		A5798C90277522CA00B7B494 /* AddRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C8C277522CA00B7B494 /* AddRoomView.swift */; };
+		A5798C91277522CA00B7B494 /* RoomListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C8D277522CA00B7B494 /* RoomListView.swift */; };
+		A5798C92277522CA00B7B494 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C8E277522CA00B7B494 /* MessageView.swift */; };
+		A5798C95277522EC00B7B494 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C94277522EC00B7B494 /* PrimaryButtonStyle.swift */; };
+		A5798C992775230A00B7B494 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C972775230A00B7B494 /* View+Extensions.swift */; };
+		A5798C9A2775230A00B7B494 /* Text+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C982775230A00B7B494 /* Text+Extensions.swift */; };
+		A5798C9D2775231A00B7B494 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C9C2775231A00B7B494 /* Room.swift */; };
+		A5798CA02775232600B7B494 /* AddRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C9F2775232600B7B494 /* AddRoomViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +40,15 @@
 		A5798C7F27750CDC00B7B494 /* TaskDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
 		A5798C8027750CDC00B7B494 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		A5798C8827751F3600B7B494 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A5798C8B277522CA00B7B494 /* MessageListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
+		A5798C8C277522CA00B7B494 /* AddRoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRoomView.swift; sourceTree = "<group>"; };
+		A5798C8D277522CA00B7B494 /* RoomListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomListView.swift; sourceTree = "<group>"; };
+		A5798C8E277522CA00B7B494 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		A5798C94277522EC00B7B494 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		A5798C972775230A00B7B494 /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		A5798C982775230A00B7B494 /* Text+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Text+Extensions.swift"; sourceTree = "<group>"; };
+		A5798C9C2775231A00B7B494 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		A5798C9F2775232600B7B494 /* AddRoomViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRoomViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +84,18 @@
 		8D188BF22559D13400D5669F /* LetsChat */ = {
 			isa = PBXGroup;
 			children = (
-				A5798C7D27750CDC00B7B494 /* TaskFBTest */,
+				A5798C9E2775232600B7B494 /* View Models */,
+				A5798C9B2775231A00B7B494 /* Models */,
+				A5798C962775230A00B7B494 /* Extensions */,
+				A5798C93277522EC00B7B494 /* Styles */,
+				A5798C8A277522CA00B7B494 /* Views */,
 				8D188BF32559D13400D5669F /* LetsChatApp.swift */,
 				8D188BF52559D13400D5669F /* ContentView.swift */,
 				8D188BF72559D13400D5669F /* Assets.xcassets */,
 				8D188BF92559D13400D5669F /* Preview Content */,
 				8D188BFC2559D13400D5669F /* Info.plist */,
 				A5798C8827751F3600B7B494 /* GoogleService-Info.plist */,
+				A5798C7D27750CDC00B7B494 /* TaskFBTest */,
 			);
 			path = LetsChat;
 			sourceTree = "<group>";
@@ -93,6 +116,50 @@
 				A5798C8027750CDC00B7B494 /* Task.swift */,
 			);
 			path = TaskFBTest;
+			sourceTree = "<group>";
+		};
+		A5798C8A277522CA00B7B494 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5798C8B277522CA00B7B494 /* MessageListView.swift */,
+				A5798C8C277522CA00B7B494 /* AddRoomView.swift */,
+				A5798C8D277522CA00B7B494 /* RoomListView.swift */,
+				A5798C8E277522CA00B7B494 /* MessageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5798C93277522EC00B7B494 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				A5798C94277522EC00B7B494 /* PrimaryButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		A5798C962775230A00B7B494 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5798C972775230A00B7B494 /* View+Extensions.swift */,
+				A5798C982775230A00B7B494 /* Text+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5798C9B2775231A00B7B494 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5798C9C2775231A00B7B494 /* Room.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A5798C9E2775232600B7B494 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5798C9F2775232600B7B494 /* AddRoomViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,10 +240,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5798C9A2775230A00B7B494 /* Text+Extensions.swift in Sources */,
 				A5798C8227750CDC00B7B494 /* TaskDetailView.swift in Sources */,
+				A5798C91277522CA00B7B494 /* RoomListView.swift in Sources */,
+				A5798C992775230A00B7B494 /* View+Extensions.swift in Sources */,
+				A5798C90277522CA00B7B494 /* AddRoomView.swift in Sources */,
+				A5798C92277522CA00B7B494 /* MessageView.swift in Sources */,
+				A5798C9D2775231A00B7B494 /* Room.swift in Sources */,
+				A5798CA02775232600B7B494 /* AddRoomViewModel.swift in Sources */,
 				8D188BF62559D13400D5669F /* ContentView.swift in Sources */,
 				A5798C8327750CDC00B7B494 /* Task.swift in Sources */,
+				A5798C95277522EC00B7B494 /* PrimaryButtonStyle.swift in Sources */,
 				A5798C8127750CDC00B7B494 /* TasksContentView.swift in Sources */,
+				A5798C8F277522CA00B7B494 /* MessageListView.swift in Sources */,
 				8D188BF42559D13400D5669F /* LetsChatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
