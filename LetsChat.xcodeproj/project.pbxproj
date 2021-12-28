@@ -27,6 +27,7 @@
 		A5798C9A2775230A00B7B494 /* Text+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C982775230A00B7B494 /* Text+Extensions.swift */; };
 		A5798C9D2775231A00B7B494 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C9C2775231A00B7B494 /* Room.swift */; };
 		A5798CA02775232600B7B494 /* AddRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5798C9F2775232600B7B494 /* AddRoomViewModel.swift */; };
+		A590B7EC277BC2F400EB833F /* RoomListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590B7EB277BC2F400EB833F /* RoomListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		A5798C982775230A00B7B494 /* Text+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Text+Extensions.swift"; sourceTree = "<group>"; };
 		A5798C9C2775231A00B7B494 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		A5798C9F2775232600B7B494 /* AddRoomViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRoomViewModel.swift; sourceTree = "<group>"; };
+		A590B7EB277BC2F400EB833F /* RoomListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				A5798C9F2775232600B7B494 /* AddRoomViewModel.swift */,
+				A590B7EB277BC2F400EB833F /* RoomListViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				A5798C90277522CA00B7B494 /* AddRoomView.swift in Sources */,
 				A5798C92277522CA00B7B494 /* MessageView.swift in Sources */,
 				A5798C9D2775231A00B7B494 /* Room.swift in Sources */,
+				A590B7EC277BC2F400EB833F /* RoomListViewModel.swift in Sources */,
 				A5798CA02775232600B7B494 /* AddRoomViewModel.swift in Sources */,
 				8D188BF62559D13400D5669F /* ContentView.swift in Sources */,
 				A5798C8327750CDC00B7B494 /* Task.swift in Sources */,
