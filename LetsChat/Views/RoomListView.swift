@@ -10,11 +10,14 @@ import SwiftUI
 struct RoomListView: View {
     
     @State private var isPresented: Bool = false
+    @StateObject private var roomListVM = RoomListViewModel()
    
     
     var body: some View {
         VStack {
-            
+            List(roomListVM.rooms, id: \.roomId) {room in
+                RoomCell(room: room)
+            }
         }
         .navigationTitle("Rooms")
         .navigationBarItems(trailing: Button(action: {
@@ -32,7 +35,7 @@ struct RoomListView: View {
         })
         
         .onAppear(perform: {
-            
+            roomListVM.getAllRooms()
         })
     }
 }
@@ -41,6 +44,17 @@ struct RoomListView_Previews: PreviewProvider {
     static var previews: some View {
         RoomListView()
             .embedInNavigationView()
+    }
+}
+
+struct RoomCell: View {
+    let room: RoomViewModel
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(room.name).font(.headline)
+            Text(room.description)
+        }
     }
 }
 

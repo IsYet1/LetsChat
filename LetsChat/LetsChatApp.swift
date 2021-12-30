@@ -36,7 +36,7 @@ struct LetsChatApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RoomListView()
         }
     }
 }

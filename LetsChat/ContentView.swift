@@ -15,11 +15,11 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-           
+            
             Image("logo")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .clipShape(Circle())
             
             Spacer()
             
@@ -29,7 +29,7 @@ struct ContentView: View {
             Button("Enter") {
                 isActive = true
                 username = usernameEntry
-               
+                
             }.buttonStyle(PrimaryButtonStyle())
             
             NavigationLink(
@@ -41,7 +41,7 @@ struct ContentView: View {
             
             Spacer()
         }.padding()
-        .embedInNavigationView()
+            .embedInNavigationView()
     }
 }
 
