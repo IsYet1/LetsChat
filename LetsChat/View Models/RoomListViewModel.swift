@@ -36,6 +36,7 @@ class RoomListViewModel: ObservableObject {
                     print(error.localizedDescription)
                 } else {
                     if let snapshot = snapshot {
+                        print("Snapshot found and loaded")
                         let rooms: [RoomViewModel] = snapshot.documents.compactMap {doc in
                             guard var room = try? doc.data(as: Room.self) else {
                                 return nil
