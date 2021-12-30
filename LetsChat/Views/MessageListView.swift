@@ -10,6 +10,8 @@ import Combine
 
 struct MessageListView: View {
     
+    let room: RoomViewModel
+    
     @State private var message: String = ""
     @AppStorage("username") private var username = ""
     
@@ -46,7 +48,7 @@ struct MessageListView: View {
         }
         
         
-        .navigationTitle("Room Name")
+        .navigationTitle(room.name)
         
         .onAppear(perform: {
             
@@ -56,7 +58,7 @@ struct MessageListView: View {
 
 struct MessageListView_Previews: PreviewProvider {
     static var previews: some View {
-        MessageListView()
+        MessageListView(room: RoomViewModel(room: Room(name: "Room Preview", description: "Preview Room")))
             .embedInNavigationView()
     }
 }

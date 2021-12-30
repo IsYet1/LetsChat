@@ -16,8 +16,13 @@ struct RoomListView: View {
     var body: some View {
         VStack {
             List(roomListVM.rooms, id: \.roomId) {room in
-                RoomCell(room: room)
-            }
+                NavigationLink(
+                    destination: MessageListView(room: room),
+                    label: {
+                        RoomCell(room: room)
+                    }
+                )
+            }.listStyle(PlainListStyle())
         }
         .navigationTitle("Rooms 123")
         .navigationBarItems(trailing: Button(action: {
