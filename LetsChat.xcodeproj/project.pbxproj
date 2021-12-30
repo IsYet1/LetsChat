@@ -11,6 +11,8 @@
 		8D188BF62559D13400D5669F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D188BF52559D13400D5669F /* ContentView.swift */; };
 		8D188BF82559D13400D5669F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D188BF72559D13400D5669F /* Assets.xcassets */; };
 		8D188BFB2559D13400D5669F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D188BFA2559D13400D5669F /* Preview Assets.xcassets */; };
+		A5133520277E7B06008DF199 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A513351F277E7B06008DF199 /* Message.swift */; };
+		A5133522277E7BA5008DF199 /* MessageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5133521277E7BA5008DF199 /* MessageListViewModel.swift */; };
 		A5798C7827750A5000B7B494 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A5798C7727750A5000B7B494 /* FirebaseAuth */; };
 		A5798C7A27750A5000B7B494 /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A5798C7927750A5000B7B494 /* FirebaseDatabaseSwift-Beta */; };
 		A5798C7C27750A5000B7B494 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A5798C7B27750A5000B7B494 /* FirebaseFirestoreSwift-Beta */; };
@@ -37,6 +39,8 @@
 		8D188BF72559D13400D5669F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D188BFA2559D13400D5669F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D188BFC2559D13400D5669F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A513351F277E7B06008DF199 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A5133521277E7BA5008DF199 /* MessageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewModel.swift; sourceTree = "<group>"; };
 		A5798C7E27750CDC00B7B494 /* TasksContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksContentView.swift; sourceTree = "<group>"; };
 		A5798C7F27750CDC00B7B494 /* TaskDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
 		A5798C8027750CDC00B7B494 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				A5798C9C2775231A00B7B494 /* Room.swift */,
+				A513351F277E7B06008DF199 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			children = (
 				A5798C9F2775232600B7B494 /* AddRoomViewModel.swift */,
 				A590B7EB277BC2F400EB833F /* RoomListViewModel.swift */,
+				A5133521277E7BA5008DF199 /* MessageListViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -256,6 +262,8 @@
 				A5798C8327750CDC00B7B494 /* Task.swift in Sources */,
 				A5798C95277522EC00B7B494 /* PrimaryButtonStyle.swift in Sources */,
 				A5798C8127750CDC00B7B494 /* TasksContentView.swift in Sources */,
+				A5133522277E7BA5008DF199 /* MessageListViewModel.swift in Sources */,
+				A5133520277E7B06008DF199 /* Message.swift in Sources */,
 				A5798C8F277522CA00B7B494 /* MessageListView.swift in Sources */,
 				8D188BF42559D13400D5669F /* LetsChatApp.swift in Sources */,
 			);
