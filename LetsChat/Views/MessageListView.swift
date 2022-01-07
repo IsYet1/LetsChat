@@ -12,8 +12,18 @@ struct MessageListView: View {
     
     let room: RoomViewModel
     
+    @StateObject private var messageListVM = MessageListViewModel()
+    
     @State private var message: String = ""
     @AppStorage("username") private var username = ""
+    
+    private func sendMessage() {
+        let messageVS = MessageViewState(message: message, roomId: room.roomId, username: username)
+        
+        messageListVM.sendMessage(msg: messageVS) {
+            message = ""
+        }
+    }
     
     var body: some View {
         
@@ -37,6 +47,7 @@ struct MessageListView: View {
                 
                 Button(action: {
                    
+                    sendMessage()
                     
                 }, label: {
                     Image(systemName: "paperplane.fill")

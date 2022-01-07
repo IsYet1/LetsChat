@@ -30,7 +30,23 @@ class MessageListViewModel: ObservableObject {
     func sendMessage(msg: MessageViewState, completion: @escaping () -> Void) {
         
         // Example of using STATE and class init to convert to a model
+        // vs = ViewState
         let message = Message(vs: msg)
+        
+        do {
+            _ = try db.collection("rooms")
+            .document(message.roomId)
+            .collection("messages")
+            .addDocument(from: message, encoder: Firestore.Encoder()) { (error) in
+                if let error = error {
+                    print(error.localizedDescription)
+                } else {
+                    completion()
+                }
+            }
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
 }
 

@@ -28,7 +28,7 @@ struct ContentView: View {
             
             Button("Enter") {
                 isActive = true
-//                username = usernameEntry
+                username = usernameEntry
                 
             }.buttonStyle(PrimaryButtonStyle())
             
