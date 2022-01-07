@@ -21,6 +21,7 @@ struct MessageListView: View {
         let messageVS = MessageViewState(message: message, roomId: room.roomId, username: username)
         
         messageListVM.sendMessage(msg: messageVS) {
+            print("Message sent successfully")
             message = ""
         }
     }
@@ -62,7 +63,7 @@ struct MessageListView: View {
         .navigationTitle(room.name)
         
         .onAppear(perform: {
-            
+            messageListVM.registerUpdatesForRoom(room: room)
         })
     }
 }

@@ -27,6 +27,30 @@ class MessageListViewModel: ObservableObject {
     
     @Published var messages: [MessageViewModel] = []
     
+    func registerUpdatesForRoom(room: RoomViewModel) {
+        db.collection("rooms")
+            .document(room.roomId)
+            .collection("messages")
+            .order(by: "messageDate", descending: false)
+            .addSnapshotListener { (snapshot, error) in
+                if let error = error {
+                    print(error.localizedDescription)
+                } else {
+                    if let snapshot = snapshot {
+                        let messages: [MessageViewModel] = snapshot.documents.compactMap { doc in
+                            guard var message: Message = try? doc.data(as: Message.self) else { return nil }
+                            message.id = doc.documentID
+                            return MessageViewModel(message: message)
+                        }
+                        // A published property so assign in the main queue
+                        DispatchQueue.main.async {
+                            self.messages = messages
+                        }
+                    }
+                }
+            }
+    }
+    
     func sendMessage(msg: MessageViewState, completion: @escaping () -> Void) {
         
         // Example of using STATE and class init to convert to a model
