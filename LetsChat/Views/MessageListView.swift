@@ -16,6 +16,7 @@ struct MessageListView: View {
     
     @State private var message: String = ""
     @AppStorage("username") private var username = ""
+    @State private var cancellable: AnyCancellable?
     
     private func sendMessage() {
         let messageVS = MessageViewState(message: message, roomId: room.roomId, username: username)
@@ -29,12 +30,33 @@ struct MessageListView: View {
     var body: some View {
         
         VStack {
+            // ScrollView will automatically scroll when the content changes
             ScrollView {
                 ScrollViewReader { scrollView in
                     VStack {
-                       
+                        ForEach(messageListVM.messages, id: \.messageId) {message in
+                            HStack {
+                                if message.username == username {
+                                    Spacer()
+                                    MessageView(messageText: message.messageText, username: message.username, style: .primary)
+                                } else {
+                                    MessageView(messageText: message.messageText, username: message.username, style: .secondary)
+                                    Spacer()
+                                }
+                            }.padding()
+                            .id(message.messageId)
+                        }
                     }.onAppear(perform: {
-                            
+                        
+                        cancellable = messageListVM.$messages.sink{ messages in
+                            if messages.count > 0 {
+                                DispatchQueue.main.async {
+                                    withAnimation{
+                                        scrollView.scrollTo(messages[messages.endIndex - 1].messageId, anchor: .bottom)
+                                    }
+                                }
+                            }
+                        }
                           
                     })
                 }
