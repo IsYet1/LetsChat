@@ -82,7 +82,7 @@ struct MessageListView: View {
         }
         
         
-        .navigationTitle(room.name)
+        .navigationTitle("\(room.name) - (\(username))")
         
         .onAppear(perform: {
             messageListVM.registerUpdatesForRoom(room: room)

@@ -11,7 +11,7 @@ struct RoomListView: View {
     
     @State private var isPresented: Bool = false
     @StateObject private var roomListVM = RoomListViewModel()
-   
+    @AppStorage("username") private var username = ""
     
     var body: some View {
         VStack {
@@ -24,7 +24,7 @@ struct RoomListView: View {
                 )
             }.listStyle(PlainListStyle())
         }
-        .navigationTitle("Rooms 123")
+        .navigationTitle("Rooms (\(username))")
         .navigationBarItems(trailing: Button(action: {
             isPresented = true
         }, label: {
